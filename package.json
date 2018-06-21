@@ -1,0 +1,21 @@
+{
+  "name": "web-api-routing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "claudia create --api-module api --region us-east-1 --set-env REQUEST_FORMAT=CLAUDIA_API_BUILDER --name routing3",
+    "update": "claudia update",
+    "use-aws-proxy": "claudia update --update-env REQUEST_FORMAT=AWS_PROXY",
+    "use-api-builder": "claudia update --update-env REQUEST_FORMAT=CLAUDIA_API_BUILDER"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "claudia-api-builder": "4.1.1"
+  },
+  "devDependencies": {
+    "claudia": "^5.0.0"
+  }
+}
